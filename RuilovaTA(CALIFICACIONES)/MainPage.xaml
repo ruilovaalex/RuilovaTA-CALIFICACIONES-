@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="RuilovaTA_CALIFICACIONES.MainPage"
+    BackgroundColor="#F5F7FA">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <!-- ENCABEZADO -->
+            <Frame
+                Padding="20"
+                CornerRadius="15"
+                BackgroundColor="#2E5090"
+                HasShadow="True"
+                BorderColor="#2E5090">
+
+                <Label
+                    Text="Sistema de Calificaciones"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="White" />
+
+            </Frame>
+
+            <!-- SELECCIÓN DE ESTUDIANTE -->
+            <Frame
+                Padding="16"
+                CornerRadius="12"
+                BackgroundColor="White"
+                HasShadow="True"
+                BorderColor="#E0E0E0">
+
+                <VerticalStackLayout Spacing="8">
+
+                    <Label
+                        Text="👤 Seleccione Estudiante"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="#2E5090" />
+
+                    <Picker
+                        x:Name="pkEstudiante"
+                        BackgroundColor="#F5F7FA"
+                        TextColor="#333333">
+
+                        <Picker.Items>
+                            <x:String>Juan</x:String>
+                            <x:String>Pedro</x:String>
+                            <x:String>Maria</x:String>
+                            <x:String>Luisa</x:String>
+                            <x:String>Carlos</x:String>
+                        </Picker.Items>
+
+                    </Picker>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- PRIMER PERÍODO -->
+            <Frame
+                Padding="16"
+                CornerRadius="12"
+                BackgroundColor="White"
+                HasShadow="True"
+                BorderColor="#E0E0E0">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label
+                        Text="📊 Primer Período (Parcial 1)"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="#2E5090" />
+
+                    <VerticalStackLayout Spacing="6">
+
+                        <Label
+                            Text="Seguimiento 1 (30%)"
+                            FontSize="14"
+                            TextColor="#555555" />
+
+                        <Entry
+                            x:Name="txtSeg1"
+                            Placeholder="Ingrese nota 0-10"
+                            Keyboard="Numeric"
+                            BackgroundColor="#F5F7FA"
+                            TextColor="#333333"
+                            PlaceholderColor="#999999" />
+
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+
+                        <Label
+                            Text="Examen 1 (20%)"
+                            FontSize="14"
+                            TextColor="#555555" />
+
+                        <Entry
+                            x:Name="txtExa1"
+                            Placeholder="Ingrese nota 0-10"
+                            Keyboard="Numeric"
+                            BackgroundColor="#F5F7FA"
+                            TextColor="#333333"
+                            PlaceholderColor="#999999" />
+
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        HeightRequest="2"
+                        BackgroundColor="#E0E0E0"
+                        Margin="0,8" />
+
+                    <Frame
+                        Padding="12"
+                        CornerRadius="8"
+                        BackgroundColor="#E8F0FF"
+                        BorderColor="#2E5090"
+                        HasShadow="False">
+
+                        <HorizontalStackLayout
+                            Spacing="8"
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label
+                                Text="Parcial 1:"
+                                FontSize="15"
+                                FontAttributes="Bold"
+                                TextColor="#2E5090"
+                                VerticalOptions="Center" />
+
+                            <Label
+                                x:Name="lblParcial1"
+                                Text="0.00"
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="#2E5090"
+                                VerticalOptions="Center" />
+
+                        </HorizontalStackLayout>
+
+                    </Frame>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- SEGUNDO PERÍODO -->
+            <Frame
+                Padding="16"
+                CornerRadius="12"
+                BackgroundColor="White"
+                HasShadow="True"
+                BorderColor="#E0E0E0">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label
+                        Text="📊 Segundo Período (Parcial 2)"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="#2E5090" />
+
+                    <VerticalStackLayout Spacing="6">
+
+                        <Label
+                            Text="Seguimiento 2 (30%)"
+                            FontSize="14"
+                            TextColor="#555555" />
+
+                        <Entry
+                            x:Name="txtSeg2"
+                            Placeholder="Ingrese nota 0-10"
+                            Keyboard="Numeric"
+                            BackgroundColor="#F5F7FA"
+                            TextColor="#333333"
+                            PlaceholderColor="#999999" />
+
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+
+                        <Label
+                            Text="Examen 2 (20%)"
+                            FontSize="14"
+                            TextColor="#555555" />
+
+                        <Entry
+                            x:Name="txtExa2"
+                            Placeholder="Ingrese nota 0-10"
+                            Keyboard="Numeric"
+                            BackgroundColor="#F5F7FA"
+                            TextColor="#333333"
+                            PlaceholderColor="#999999" />
+
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        HeightRequest="2"
+                        BackgroundColor="#E0E0E0"
+                        Margin="0,8" />
+
+                    <Frame
+                        Padding="12"
+                        CornerRadius="8"
+                        BackgroundColor="#E8F0FF"
+                        BorderColor="#2E5090"
+                        HasShadow="False">
+
+                        <HorizontalStackLayout
+                            Spacing="8"
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label
+                                Text="Parcial 2:"
+                                FontSize="15"
+                                FontAttributes="Bold"
+                                TextColor="#2E5090"
+                                VerticalOptions="Center" />
+
+                            <Label
+                                x:Name="lblParcial2"
+                                Text="0.00"
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="#2E5090"
+                                VerticalOptions="Center" />
+
+                        </HorizontalStackLayout>
+
+                    </Frame>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- RESULTADOS -->
+            <Frame
+                Padding="16"
+                CornerRadius="12"
+                BackgroundColor="White"
+                HasShadow="True"
+                BorderColor="#E0E0E0">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label
+                        Text="🏆 Resultados Finales"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="#2E5090" />
+
+                    <!-- NOTA FINAL -->
+                    <Frame
+                        Padding="16"
+                        CornerRadius="10"
+                        BackgroundColor="#2E5090"
+                        BorderColor="#2E5090"
+                        HasShadow="False">
+
+                        <VerticalStackLayout
+                            Spacing="8"
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label
+                                Text="Nota Final"
+                                FontSize="14"
+                                TextColor="White"
+                                HorizontalOptions="Center" />
+
+                            <Label
+                                x:Name="lblFinal"
+                                Text="0.00"
+                                FontSize="32"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                HorizontalOptions="Center" />
+
+                        </VerticalStackLayout>
+
+                    </Frame>
+
+                    <!-- FECHA -->
+                    <VerticalStackLayout Spacing="6">
+
+                        <Label
+                            Text="📅 Fecha"
+                            FontSize="14"
+                            TextColor="#555555" />
+
+                        <DatePicker
+                            x:Name="dpFecha"
+                            BackgroundColor="#F5F7FA"
+                            TextColor="#333333" />
+
+                    </VerticalStackLayout>
+
+                    <!-- ESTADO -->
+                    <Frame
+                        Padding="12"
+                        CornerRadius="8"
+                        BorderColor="#2E5090"
+                        HasShadow="False">
+
+                        <HorizontalStackLayout
+                            Spacing="8"
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label
+                                Text="Estado:"
+                                FontSize="15"
+                                FontAttributes="Bold"
+                                TextColor="#2E5090"
+                                VerticalOptions="Center" />
+
+                            <Label
+                                x:Name="lblEstado"
+                                Text="Pendiente"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="#FF9800"
+                                VerticalOptions="Center" />
+
+                        </HorizontalStackLayout>
+
+                    </Frame>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- BOTÓN -->
+            <Button
+                Text="➕ CALCULAR CALIFICACIÓN"
+                Clicked="Button_Clicked"
+                BackgroundColor="#2E5090"
+                TextColor="White"
+                FontSize="16"
+                FontAttributes="Bold"
+                HeightRequest="55"
+                CornerRadius="10"
+                Margin="0,8,0,8" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
